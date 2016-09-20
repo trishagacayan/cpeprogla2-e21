@@ -82,6 +82,8 @@ main(){
 	for (int y=0;y<3;y++)
 	{
 	cout <<setw(59)<<itm[y].name<<setw(12)<<itm[y].price<<setw(12)<<itm[y].quantity<<endl;
+	cout<<"Total Price: ";
+	
 		
 		
 	}
