@@ -14,7 +14,8 @@ void problem1(){
   char str2[100];
   strcpy(str1,"Hello");
   strcpy(str2,"hello");
-switch(strcmp (str1,str2)){
+switch(strcmp (str1,str2))
+{
 	case -1:
 		cout << "Negative" <<endl;
 		break;
