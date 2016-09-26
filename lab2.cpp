@@ -18,7 +18,8 @@ void problem2(){
 	srand(time(NULL)); 
 	cout << "10 unique numbers : ";	
 	
-	for (int i=0;i<10;i++){
+	for (int i=0;i<10;i++)
+	{
     	
 	do{
     	num1=rand()%MAX+Min;
