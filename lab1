@@ -1,0 +1,73 @@
+#include<iostream>
+using namespace std;
+void hashmat(){
+	int x,y,diff=0;
+	int warrior[2][3];
+		cout <<" Enter Hashmat's number of warriors and enemies: ";
+		
+	for(x=0;x<3;x++)
+	{
+		for (y=0;y<2;y++)
+		{	
+			cin >> warrior[x][y];
+		}
+	}
+ 	if (y<x)
+ 	{
+ 		if (x || y == 4294967296)
+ 		{
+		 
+	  cout << "The differences are: " <<endl;
+	for (x=0;x<3;x++)
+	{
+		for(y=0;y<2;y++)
+		
+		diff=warrior[x][1] - warrior[x][0];
+			cout << diff <<endl;
+	}
+		diff=0;
+	}
+	
+	else
+	{
+		cout <<"invalid input: not more than 4294967296!";
+	 } 
+}
+	else
+	{
+	cout <<	"Invalid Input!: Hashmat's soldiers should be less than the opponent!"<<endl;
+	}
+
+}
+void fizzbuzz(){
+	cout<<"=================================================="<<endl;
+	
+	int i=0;
+	
+	cout<< "Print numbers from 1 to 100" <<endl;
+	
+	for(i=1;i<=100;i++)
+	{
+	 if (i%3==0 && i%5==0)
+	{
+	
+	cout << "Fizzbuzz" <<endl;
+	}
+	else if(i%3==0)
+	{
+	cout <<"Fizz" <<endl;
+	}
+	 else if (i%5==0)
+	{
+	
+	cout <<"Buzz" << endl;	
+	}
+	else 
+	cout << i <<endl;
+	}
+
+}
+main(){
+	hashmat();
+	fizzbuzz();
+}
