@@ -1,0 +1,18 @@
+//multiples of 5 and 3
+#include<iostream>
+#include<fstream>
+using namespace std;
+main(){
+	ifstream input("input.txt");
+	int x;
+	int num;
+	while(input>>num)
+	{
+		for(int i=1;i<num;i++)
+			if(i%3==0||i%5==0){
+			x+=i;
+			}
+		cout <<x;
+		}
+
+}
